@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F240DE9E-7540-49B0-94CD-770EE7369C83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RCProject</RootNamespace>
+    <AssemblyName>RCProject 12.0.0.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\RC Gujarat Deploys\Deploy 12.0.0.0\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>RC Personalization Gujarat</ProductName>
+    <PublisherName>Rosmerta Technologies Limited</PublisherName>
+    <SuiteName>Rosmerta Technologies Limited</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>12.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>69764A62AD624AD25160FDE191D3F036D0E29F66</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RCProject_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>RCProject.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>rosmertaIcon.ICO</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BAL">
+      <HintPath>..\BAL\bin\Debug\BAL.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientRuntime">
+      <HintPath>C:\Users\Admin\Desktop\PremiumSDK\DemoProgram\ClientRuntime\bin\Debug\ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="INI">
+      <HintPath>..\INI\bin\Debug\INI.dll</HintPath>
+    </Reference>
+    <Reference Include="persoRCDU, Version=6.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\New folder\persoRCDUv6.2\persoRCDUv6.2\bin\Debug\persoRCDU.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BodytypeMissMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BodytypeMissMatch.Designer.cs">
+      <DependentUpon>BodytypeMissMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkPrinting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkPrinting.Designer.cs">
+      <DependentUpon>BulkPrinting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardPersonalization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardPersonalization.Designer.cs">
+      <DependentUpon>CardPersonalization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardStatusReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardStatusReport.Designer.cs">
+      <DependentUpon>CardStatusReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateChallan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateChallan.Designer.cs">
+      <DependentUpon>CreateChallan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateINI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateINI.Designer.cs">
+      <DependentUpon>CreateINI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyCardGenerated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyCardGenerated.Designer.cs">
+      <DependentUpon>DailyCardGenerated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryChallanReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryChallanReport.Designer.cs">
+      <DependentUpon>DeliveryChallanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelMissMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuelMissMatch.Designer.cs">
+      <DependentUpon>FuelMissMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportFlatFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportFlatFile.Designer.cs">
+      <DependentUpon>ImportFlatFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssuingAuthoritySignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssuingAuthoritySignature.Designer.cs">
+      <DependentUpon>IssuingAuthoritySignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakerMissMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakerMissMatch.Designer.cs">
+      <DependentUpon>MakerMissMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageRCVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageRCVehicle.Designer.cs">
+      <DependentUpon>ManageRCVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoggedInUser.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIRC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIRC.Designer.cs">
+      <DependentUpon>MDIRC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersoCardAssignData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RC Required\RC REPORTS\Daily.cs">
+      <DependentUpon>Daily.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RC Required\RC REPORTS\Delivery Challan.cs">
+      <DependentUpon>Delivery Challan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RC Required\RC REPORTS\RC_CARD_NT.cs">
+      <DependentUpon>RC_CARD_NT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RC Required\RC REPORTS\RC_CARD_T.cs">
+      <DependentUpon>RC_CARD_T.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RC Required\RC REPORTS\REJECTED CARDS.cs">
+      <DependentUpon>REJECTED CARDS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RC Required\RC REPORTS\Status.cs">
+      <DependentUpon>Status.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RejectCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RejectCard.Designer.cs">
+      <DependentUpon>RejectCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchStatus.Designer.cs">
+      <DependentUpon>SearchStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleCardPrinting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleCardPrinting.Designer.cs">
+      <DependentUpon>SingleCardPrinting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validation.Designer.cs">
+      <DependentUpon>Validation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BodytypeMissMatch.resx">
+      <DependentUpon>BodytypeMissMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkPrinting.resx">
+      <DependentUpon>BulkPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardPersonalization.resx">
+      <DependentUpon>CardPersonalization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardStatusReport.resx">
+      <DependentUpon>CardStatusReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateChallan.resx">
+      <DependentUpon>CreateChallan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateINI.resx">
+      <DependentUpon>CreateINI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyCardGenerated.resx">
+      <DependentUpon>DailyCardGenerated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryChallanReport.resx">
+      <DependentUpon>DeliveryChallanReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FuelMissMatch.resx">
+      <DependentUpon>FuelMissMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportFlatFile.resx">
+      <DependentUpon>ImportFlatFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssuingAuthoritySignature.resx">
+      <DependentUpon>IssuingAuthoritySignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakerMissMatch.resx">
+      <DependentUpon>MakerMissMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRCVehicle.resx">
+      <DependentUpon>ManageRCVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIRC.resx">
+      <DependentUpon>MDIRC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RejectCard.resx">
+      <DependentUpon>RejectCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchStatus.resx">
+      <DependentUpon>SearchStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleCardPrinting.resx">
+      <DependentUpon>SingleCardPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation.resx">
+      <DependentUpon>Validation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RC Required\RC ISSUE AUTHORITY SIGNATURE\RTOSign.bmp" />
+    <Content Include="RC Required\RC REPORTS\Daily.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Daily.cs</LastGenOutput>
+    </Content>
+    <Content Include="RC Required\RC REPORTS\Delivery Challan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Delivery Challan.cs</LastGenOutput>
+    </Content>
+    <Content Include="RC Required\RC REPORTS\RC_CARD_NT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RC_CARD_NT.cs</LastGenOutput>
+    </Content>
+    <Content Include="RC Required\RC REPORTS\RC_CARD_T.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RC_CARD_T.cs</LastGenOutput>
+    </Content>
+    <Content Include="RC Required\RC REPORTS\REJECTED CARDS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REJECTED CARDS.cs</LastGenOutput>
+    </Content>
+    <Content Include="RC Required\RC REPORTS\Status.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Status.cs</LastGenOutput>
+    </Content>
+    <Content Include="RC Required\RC VEHICLE IMAGES\1.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\10.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\11.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\12.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\13.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\14.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\15.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\16.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\17.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\18.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\19.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\2.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\20.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\21.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\22.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\23.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\24.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\25.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\26.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\27.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\28.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\29.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\3.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\30.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\31.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\4.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\5.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\6.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\7.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\8.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\9.bmp" />
+    <Content Include="RC Required\RC VEHICLE IMAGES\HANDICAP.bmp" />
+    <Content Include="rosmertaIcon.ICO" />
+    <None Include="Resources\rosmertaLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
